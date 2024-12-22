@@ -26,6 +26,8 @@
 */
 
 // Dependencies
+// Compile confirmed on Arduino IDE v2.2.1
+// M5Stack board v2.1.0
 #include <M5Unified.hpp>  // https://github.com/M5Stack/M5Unified/ v0.1.12
 #include <esp_dmx.h>      // https://github.com/someweisguy/esp_dmx/ v3.1.0
 #include <Adafruit_TinyUSB.h> //https://github.com/adafruit/Adafruit_TinyUSB_Arduino/ v2.4.0
