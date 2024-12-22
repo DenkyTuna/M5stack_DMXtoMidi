@@ -28,8 +28,8 @@
 // Dependencies
 #include <M5Unified.hpp>  // https://github.com/M5Stack/M5Unified/ v0.1.12
 #include <esp_dmx.h>      // https://github.com/someweisguy/esp_dmx/ v3.1.0
-#include <Adafruit_TinyUSB.h>
-#include <MIDI.h>
+#include <Adafruit_TinyUSB.h> //https://github.com/adafruit/Adafruit_TinyUSB_Arduino/ v2.4.0
+#include <MIDI.h> //https://github.com/FortySevenEffects/arduino_midi_library/ v5.0.2
 #include <gob_unifiedButton.hpp> //https://github.com/GOB52/gob_unifiedButton/ v0.1.1
 
 // Sprite
@@ -217,7 +217,7 @@ void loop(void) {
   unifiedButton.update();
 
   if (curMode == home) {
-    dmxreceive();
+    dmxReceive();
   } else if (curMode == config) {
     configScreen();
   }
@@ -225,7 +225,7 @@ void loop(void) {
   unifiedButton.draw();
 }
 
-void dmxreceive(void) {
+void dmxReceive(void) {
   // For debug
   //unsigned long now = millis();
 
